@@ -10,28 +10,51 @@
 }
 
 .content {
-    margin: 0 10rem 0 10rem;
+    margin: 0 15rem 0 15rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15%;
 }
 
-.img_logo {
+.princ_content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title_fistpage{
     color: white;
-    font-size: 2rem;
-    padding: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.Princ_content >h1{
-    color: white;
-    font-size: 5rem;
-
-}
-
-.Princ_content >p{
+.subtitle_fistpage{
     color: white;
     font-size: 2rem;
     width: 900px;
 }
 
-.Princ_content >a{
+.btn_direct{
     color: black;
+    background-color: white;
+    height: 60px;
+    width: 300px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.2s;
+}
+
+.btn_direct:hover{
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.39);
+    transform: scale(1.05);
+    transition: 0.2s;
 }
