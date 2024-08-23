@@ -1,17 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.fist_page {
+.first_page {
     background: url('Screenshot_1.png') no-repeat center center/cover;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
+    box-shadow: 0px 0px 10px 3px #1f1f1f;
 }
 
-.content {
+.content_firstpage {
     margin-left: 8rem;
     height: 100%;
     width: 60%;
@@ -32,32 +34,45 @@
     color: white;
     font-size: 3.5rem;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .subtitle_fistpage{
     color: white;
     font-size: 2rem;
-    width: 900px;
+    width: 65%;
 }
 
 .btn_direct{
-    color: black;
-    background-color: white;
-    height: 60px;
-    width: 300px;
+    height: 70px;
+    width: 350px;
     display: flex;
     align-items: center; 
     justify-content: center; 
     border-radius: 40px;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 0.2s;
     text-decoration: none;
 }
 
-.btn_direct:hover{
+#btn_first{
+    color: black;
+    background-color: white;
+}
+
+#btn_second{
+    color: white;
+    background-color: black;
+}
+
+#btn_first:hover{
+    box-shadow: 0px 0px 8px 5px rgba(255, 255, 255, 0.192);
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+#btn_second:hover{
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.39);
     transform: scale(1.05);
     transition: 0.2s;
@@ -66,4 +81,36 @@
 .img_content{
     height: 500px;
     width: 500px;
+}
+
+.second_page {
+    background: url('landing-homes-background-img-1-1.png') no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_secondpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_logo{
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.subtitle_secondpage{
+    font-size: 1rem;
+}
+
+.videoloop{
+    margin: 40px 0 40px 0;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.39);
+    object-fit: fill;
 }
