@@ -1,19 +1,38 @@
+:root {
+    /* cor */
+    --bg-black: #000000;
+    --bg-white: #ffffff;
+    --bg-gray: #1f1f1f;
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --hover-light: rgba(255, 255, 255, 0.192);
+    --hover-dark: rgba(0, 0, 0, 0.39);
+    --overlay: #ffffff27;
+
+    /* fontes */
+    --font-primary: "Hind Siliguri", sans-serif;
+    --font-secondary: "Montserrat", sans-serif;
+    --font-default: Arial, Helvetica, sans-serif;
+}
+
+/* CSS RESET */
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Primeira pagina */
 .first_page {
     background: url('../images/background_firstpage.png') no-repeat center center/cover;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    box-shadow: 0px 0px 10px 3px #1f1f1f;
+    box-shadow: 0px 0px 10px 3px var(--bg-gray);
     align-items: center;
 }
 
+/* Conteudo geral da primeira pagina */
 .content_firstpage {
     margin-left: 8rem;
     height: 100%;
@@ -22,67 +41,67 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 15%;
+    gap: 10%;
 }
 
-.princ_content{
+/* Conteudo principal da primeira pagina */
+.princ_content {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.title_fistpage{
-    color: white;
+/* Titulo da primeira pagina */
+.title_fistpage {
+    line-height: 3.5rem;
+    font-family: var(--font-primary);
+    color: var(--text-white);
     font-size: 3.5rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-.subtitle_fistpage{
-    color: white;
+/* Subtitulo da primeira pagina */
+.subtitle_fistpage {
+    font-family: var(--font-secondary);
+    color: var(--text-white);
     font-size: 2rem;
-    width: 400px;
+    width: 500px;
 }
 
-.btn_direct{
-    height: 50px;
-    width: 300px;
+/* Configuração fixa dos botoes */
+.btn_direct {
+    height: 60px;
+    width: 400px;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     border-radius: 40px;
     font-size: 1rem;
     font-weight: 500;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-secondary);
     transition: 0.2s;
     text-decoration: none;
 }
 
-#btn_first{
-    color: black;
-    background-color: white;
+/* Botão da primeira pagina */
+#btn_first {
+    color: var(--text-black);
+    background-color: var(--bg-white);
 }
 
-#btn_second{
-    color: white;
-    background-color: black;
-}
-
-#btn_first:hover{
-    box-shadow: 0px 0px 8px 5px rgba(255, 255, 255, 0.192);
+/* Hover botao primeira pagina */
+#btn_first:hover {
+    box-shadow: 0px 0px 8px 5px var(--hover-light);
     transform: scale(1.05);
     transition: 0.2s;
 }
 
-#btn_second:hover{
-    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.39);
-    transform: scale(1.05);
-    transition: 0.2s;
-}
-
-.img_content{
+/* Imagem da esquerda da primeira pagina */
+.img_content {
     height: 500px;
 }
 
+/* Segunda pagina */
 .second_page {
     background: url(../images/background_secondpage.png) no-repeat center center;
     width: 100%;
@@ -92,74 +111,172 @@
     justify-content: center;
 }
 
-.content_secondpage{
+/* Conteudo da segunda pagina */
+.content_secondpage {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.text_logo{
+/* Texto principal da segunda pagina */
+.text_logo {
+    font-family: var(--font-primary);
     font-size: 3rem;
-    font-weight: 100;
+    font-weight: 700;
     margin-bottom: 10px;
-    color: black;
+    color: var(--text-black);
 }
 
-.subtitle_secondpage{
+/* Subtitulo da segunda pagina */
+.subtitle_secondpage {
+    font-family: var(--font-primary);
+    font-weight: 600;
     font-size: 1rem;
-    color: black;
+    color: var(--text-black);
 }
 
-.commect_subtitle{
-    color: black;
+/* Comentario da segunda pagina */
+.commect_subtitle {
+    font-family: var(--font-primary);
+    font-weight: 200;
+    color: var(--text-black);
 }
 
-.videoloop{
-    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.39);
+/* Video de demonstração do software na segunda pagina */
+.videoloop {
+    box-shadow: 0px 0px 8px 5px var(--hover-dark);
     width: 50%;
     height: 30%;
     margin: 25px 0 25px 0;
 }
 
-.third_page{
-    background-color: black;
+/* Config do botao da segunda pagina */
+#btn_second {
+    color: var(--text-white);
+    background-color: var(--bg-black);
+}
+
+/* Hover do botao da segunda pagina */
+#btn_second:hover {
+    box-shadow: 0px 0px 8px 5px var(--hover-dark);
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* Terceira pagina */
+.third_page {
+    background-color: var(--bg-black);
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
-
-.content_thirdpage{
+ /* Conteudo da terceira pagina */
+.content_thirdpage {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 40px;
     height: 100%;
     width: 90%;
-    margin: 0 20px 0 20px;
+    margin: 0 auto;
 }
 
-.item{
-    color: white;
+/* Fileira de itens */
+.item {
+    color: var(--text-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
     transition: 0.2s;
-    width: 100%;
+    width: 200px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
-.item:hover{
-    background-color: rgba(0, 0, 255, 0.432);
-    height: 50%;
-    transform: scale(1.4);
+/* Hover dos items */
+.item:hover {
+    background-color: var(--overlay);
+    transform: scale(1.1);
     transition: 0.5s;
 }
 
-.item > h3{
+.item > .title_info {
+    font-family: var(--font-primary);
+    font-weight: 400;
     margin: 20px 0 10px 0;
+}
+
+.item > .comment_info {
+    font-family: var(--font-secondary);
+    font-weight: 100;
+}
+
+
+@media (max-width: 1000px) {
+    /* Ajusta a primeira página para centralizar o conteúdo e ocultar a imagem */
+    .first_page {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* Ajusta o conteúdo da primeira página para centralizar e aumentar o espaçamento superior */
+    .content_firstpage {
+        margin: 0;
+        justify-content: flex-start;
+        margin-top: 100px;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        gap: 5%;
+    }
+
+    /* Esconde a imagem de conteúdo na primeira página para economizar espaço */
+    .img_content {
+        display: none;
+    }
+
+    /* Ajusta o tamanho da fonte e a largura do título na primeira página */
+    .title_fistpage {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+
+    /* Ajusta o tamanho da fonte e a largura do subtítulo na primeira página */
+    .subtitle_fistpage {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    /* Ajusta a largura e altura dos botões na primeira página */
+    .btn_direct {
+        width: 200px;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    /* Ajusta o vídeo de demonstração para ocupar mais espaço em telas menores */
+    .videoloop {
+        width: 70%;
+    }
+
+    /* Ajusta o conteúdo da segunda página para centralizar e aumentar o espaçamento */
+    .content_secondpage {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Ajusta a terceira página para centralizar e aumentar o espaçamento */
+    .third_page {
+        padding: 20px;
+    }
 }
